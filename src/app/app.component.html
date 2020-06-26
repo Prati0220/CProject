@@ -1,0 +1,10 @@
+<div class="main">
+  <div>
+    Welcome to Gerographical Information System
+  </div>
+  <div>
+    <app-custom-drop-down [dropDownLabel]="regionLabel" [dataOptions]="regions" (onValueSelected)="onRegionSelected($event)"></app-custom-drop-down>
+    <app-custom-drop-down [dropDownLabel]="countriesLabel" [dataOptions]="countryNames" (onValueSelected)="onCountrySelected($event)"></app-custom-drop-down>
+    <app-data-table [country]="country"></app-data-table>
+  </div>
+</div>
